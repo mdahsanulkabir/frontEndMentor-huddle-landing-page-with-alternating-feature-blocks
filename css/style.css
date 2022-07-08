@@ -8,6 +8,7 @@ font-family: 'Poppins', sans-serif; */
     --very_pale_cyan: hsl(193, 100%, 96%);
     --very_dark_cyan: hsl(192, 100%, 9%);
     --grayish_blue: hsl(208, 11%, 55%);
+    font-size: 1.125rem;
 }
 
 * {
@@ -15,21 +16,211 @@ font-family: 'Poppins', sans-serif; */
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    color: var(--very_dark_cyan);
 }
 
-/* ----------- Utility ----------- */
+
+
+/* ----------- Utility styling starts----------- */
 .btn {
-    /* -webkit-tap-highlight-color: transparent; */
+    height: clamp(1.5rem, 1.5rem + 1vw, 3rem);
+    border-radius: clamp(1.5rem/2, calc((1.5rem + 1vw)/2), 1.5rem);
+    -webkit-tap-highlight-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
 }
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+img {
+    width: 100%;
+}
+/* ----------- Utility styling ends----------- */
+
+
 
 body {
     /* background-color: blue; */
     background-image: url('../images/bg-hero-mobile.svg');
-    
+    background-repeat: no-repeat;
+    background-size: 100vw 720px;
 }
 
 
 
+/* ----------- Section styling starts----------- */
+.header {
+    margin-block : clamp(1.5rem, 1.5rem + 1.7vw, 3rem);
+    margin-inline: 30px;
+    text-align: center;
+}
+.banner {
+    margin-top: 3.8rem;
+}
+.features {
+    text-align: center;
+    margin-inline: 60px;
+    margin-bottom: 14rem;
+}
+/* ----------- Section styling ends----------- */
+
+
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo svg {
+    scale: 0.5;
+    position: relative;
+    left: -40px;
+}
+
+.header-logo .btn {
+    padding-inline: 30px;
+    border:none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #333;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.banner p {
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.banner button {
+    margin-top: 2.5rem;
+    margin-bottom: 3.3rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    width: 15rem;
+    background-color: var(--pink);
+    color: rgb(231, 229, 229);
+    border: none;
+    box-shadow: 0 2px 5px var(--pink);
+}
+
+.feature img {
+    margin-top: 4rem;
+}
+
+.feature-text h3 {
+    margin-top: 3rem;
+}
+
+.feature-text p {
+    color: var(--grayish_blue);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: .85rem;
+    line-height: 1.2rem;
+}
+
+.footer{
+    background-color: var(--very_dark_cyan);
+    color:#fff;
+    position: relative;
+    padding-top: 100px;
+    padding-inline: 1rem;
+}
+
+.center-div {
+    width: 90%;
+    height:140px;
+    text-align: center;
+    background-color: #fff;
+    color: gray;
+    border-radius: 1rem;
+    position: absolute;
+    top: -70px;
+    right:0;
+    left:0;
+    margin-inline: auto;
+}
+.center-div h3 {
+    font-size: 1rem;
+}
+
+.center-div .btn {
+    margin-block: 2rem;
+    height: 2rem;
+    border-radius: 1.25rem;
+    width: 12rem;
+    background-color: var(--pink);
+    color: rgb(231, 229, 229);
+    border: none;
+    box-shadow: 0 2px 5px var(--pink);
+}
+.footer-logo svg {
+    scale: 0.75;
+}
+.footer svg path {
+    fill: rgb(212, 216, 221);
+}
+.info p,
+.footer p,
+.footer-components p,
+.footer-components li
+{
+    color: rgb(164, 171, 178);
+}
+li{
+    padding-block: 0.4rem;
+    list-style-type: none;
+}
+
+ul + ul {
+    margin-bottom: 2rem;
+}
+
+.contact-details p {
+    padding-left: 35px;
+    margin-block: 20px;
+    font-size: 0.9rem;
+}
+
+.location {
+    line-height: 1.3rem;
+    position: relative;
+}
+
+.location::before {
+    content: url('../images/icon-location.svg');
+    scale:1;
+    position: absolute;
+    left: 4px;
+    top: 6px;
+}
+
+.phone {
+    position: relative;
+}
+.phone::before {
+    content: url('../images/icon-phone.svg');
+    scale:1;
+    position: absolute;
+    left: 4px;
+    top: 6px;
+}
+
+.email {
+    position: relative;
+}
+.email::before {
+    content: url('../images/icon-email.svg');
+    scale:1;
+    position: absolute;
+    left: 4px;
+    top: 6px;
+}
 
 .attribution {
     font-size: 11px; text-align: center;
