@@ -81,7 +81,7 @@ body {
 }
 
 .header-logo .btn {
-    padding-inline: 30px;
+    padding-inline: 20px;
     border:none;
     background-color: #fff;
     box-shadow: 0 2px 5px #333;
@@ -221,9 +221,98 @@ ul + ul {
     left: 4px;
     top: 6px;
 }
+.footer > p {
+    font-size: .8rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.social-logo {
+    text-align: center;
+}
+.social-logo * {
+    margin-inline: 10px;
+    margin-bottom: 20px;
+}
+@media (min-width:800px)  {
+    body {
+        background-image: url('../images/bg-hero-desktop.svg');
+        background-size: 100vw;
+    }
+    .header, .features {
+        margin-inline: 10%;
+    }
+    .banner {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .banner * {
+        flex-basis: 50%;
+    }
+    .banner >* {
+        text-align: left;
+    }
+    .banner-text {
+        max-width: 40%
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature * {
+        padding-inline: 20px;
+        max-width: 520px;
+    }
+    .feature .feature-img {
+        order: 1;
+    }
+    .feature:nth-of-type(2) .feature-img {
+        order: 0;
+    }
+    .footer {
+         padding-bottom:20px;
+    }
+    .footer-components {
+        margin-top: 10px;
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+    .footer-components p,
+    .footer-components li {
+        font-size : .8rem;
+    }
+    .contact-details {
+        flex-basis: 33.3%;
+    }
+    .contact-details .location {
+        margin-top: 0;
+    }
+    .social-logo {
+        flex-basis: 25%;
+    }
+    .social-logo * {
+        margin-right: 10px;
+    }
+    .footer .info{
+        margin-inline: 5%
+    }
+    .footer >p {
+        text-align: right;
+        margin-inline: 5%;
+    }
+    .center-div {
+        width: 50%;
+        max-width: 600px;
+    }
+}
 
 .attribution {
     font-size: 11px; text-align: center;
+    margin-top: 20px;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
